@@ -1,87 +1,99 @@
 ---
 layout: cv
-title: Aleksandrs Sevastjanovs
+title: Aleksandrs Sevastjanovs's cv
 ---
-# Isaac Newton
-Physicist, Mathematician, Cambridge professor.
+# Aleksandrs Sevastjanovs
+C++ developer, emedded systems designer, electronics engineer
 
 <div id="webaddress">
-<a href="isaac@applesdofall.org">isaac@applesdofall.org</a>
-| <a href="http://en.wikipedia.org/wiki/Isaac_Newton">My wikipedia page</a>
+<a href="sevalks@gmail.com">sevalks@gmail.com</a>
+| <a href="https://www.linkedin.com/in/aleksandrs-sevastjanovs-1b5b6681/">Linkedin</a>
+| <a href="+37129395565">+37129395565</a>
 </div>
 
+## Work Experience
 
-## Currently
+__Embedded Systems Developer__
+_Plockmatic SIA_ `2020 - now`
+- Optical mark detection library development
+- Firmware development for paper document finishing machines.
+- GUI application using Qt framework.
 
-Standing on the shoulders of giants
+__Embedded Systems Developer__
+_Honeywell, spol. s r.o._
+`2019 - 2019`
 
-### Specialized in
+- Firmware development for BLE enabled wireless MCU as a part of smart audio hearing protection device.
 
-Laws of motion, gravitation, minting coins, disliking [Robert Hooke](http://en.wikipedia.org/wiki/Robert_Hooke)
+__Electronics Engineer__
+_Atlas Dynamics SIA_
+`2017 - 2019`
 
+- Testing and analyzing performance of unmanned aerial vehicles.
+- Coordinating the development process of UAV subsystems.
+- Communicating with suppliers and manufacturers.
+- Electronics Speed Controller for BLDC motors of UAV.
+- Electronically controlled load testing device for ESC.
+- Integration of laser distance sensors.
+- Base station: From concept to a working solution.
+- Involvement in drone and base station battery system development.
+- Involvement in Flight Controller development, both on hardware and software levels, as well as test equipment for it.
 
-### Research interests
+__Electronics Engineer__
+_Escape Room, Riga, Latvia_
+`2016 - 2017`
 
-Cooling, power series, optics, alchemy, planetary motions, apples.
+- Fully designed and developed an interactive system of sensor-based games and mechanical contraptions.
+- Implemented stepper motor control, audio signal processing with DSP, heart rate monitor sensors, motion sensor input on STM32F429 MCU.
+- Full cycle of PCB development from schematics to produced boards.
+- Implementation of a custom serial communication protocol based on RS485 hardware.
 
+__Electronics Engineer__
+_Silmor, Riga, Latvia_
+`2015 - 2016`
+
+- Full-cycle design of membrane switch keyboards.
+- Communication with clients, working out technical requirements.
+- Production overseeing and consulting, preparing instructions for manufacturing.
+- Communicating with suppliers, ordering materials and components.
+- Developing new types of products and introducing new technologies.
+
+__Electronics Engineer Internship__
+_SV Tehs, Riga, Latvia_
+*2010 - 2010*
+
+- PCB design of RF transceiver device, drawing IC pads, and preparing the project to meet standards for mass production.
+- Production quality testing, RF IC components output signal testing.
 
 ## Education
 
-`1654-1660`
-__The King's School, Grantham.__
+__University of Southern Denmark__
+_MSc in Robotics_
+`2013 - 2014`
 
-`June 1661 - now`
-__Trinity College, Cambridge__
-
-- Sizar
-
-`1667 - death`
-__Trinity College, Cambridge__
-
-- Fellow
+Subjects included:
+-	Embedded Systems, projects: “Inverted pendulum with PID control – final project”, “Colour recognizing sorting machine”, included design of schematics, PCB, mechanical parts and firmware
+-	Artificial intelligence, final project “Sokoban puzzle solving with a physical robot”. Project earned second place in university competition
+-	Mechanics, theory and design using Autodesk Inventor
+Also subjects: Robotics, Computer Vision, Multivariate statistics
+- Computer Vision basics using OpenCV
 
 
+__Riga Technical University__
+_BSc in Electronics Engineering_
+`2010 - 2013`
+- Dissertation project:  “Li-Ion battery capacity testing and charging device” included design and implementation of hardware prototype, firmware, testing battery units and analysing the results. Grade: 9 out of 10.
 
-## Awards
-
+__University of Pardubice__
+_Erasmus student exchange period_
 `2012`
-President, *Royal Society*, London, UK
-
-Associate, *French Academy of Science*, Paris, France
 
 
+## Personal skills
 
-## Publications
-
-<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
-
-### Journals
-
-`1669`
-Newton Sir I, De analysi per æquationes numero terminorum infinitas. 
-
-`1669`
-Lectiones opticæ.
-
-etc. etc. etc.
-
-### Patents
-
-`2012`
-Infinitesimal calculus for solutions to physics problems, [SMBC](http://www.techdirt.com/articles/20121011/09312820678/if-patents-had-been-around-time-newton.shtml) patent 001
-
-
-## Occupation
-
-`1600`
-__Royal Mint__, London
-
-- Warden
-- Minted coins
-
-`1600`
-__Lucasian professor of Mathematics__, Cambridge University
-
+-	Fluent in: English, Russian and Latvian, Beginner in Czech and German
+-	Enjoys 3D modelling and 3D printing as a hobby
+-	Driving license since 2009
 
 
 <!-- ### Footer
