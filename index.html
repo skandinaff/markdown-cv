@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<div align="center">
+  <h1>ALEKSANDRS SEVASTJANOVS</h1>
+  <p>C++ developer, embedded systems designer, electronics engineer</p>
+</div>
+<div id="webaddress", align="center">
+<a href="sevalks@gmail.com">sevalks@gmail.com</a>
+| <a href="https://www.linkedin.com/in/aleksandrs-sevastjanovs-1b5b6681/">Linkedin</a>
+| <a href="+37129395565">+37129395565</a>
+</div> 
+<h2 id="work-experience">Work Experience</h2>
+<p><strong>Embedded Systems Developer</strong>,
+<em>Plockmatic SIA</em>,
+<code>2020 - now</code></p>
+<ul>
+<li>Optical mark detection cross platform library development.
+<ul>
+<li>Building the optical mark recogntition algorithms from scratch using c++ and cmake.</li>
+<li>The library is made to be sensor agnostic.</li>
+<li>PC application that can be used for batch testing and debugging is also developed.</li>
+</ul>
+</li>
+<li>Firmware and software development for paper document finishing machines. From STM32F series MCU to linux boards such as beabgle bone and raspberry pi.</li>
+<li>GUI application using Qt framework for embedded platforms.</li>
+</ul>
+<p><strong>Embedded Systems Developer</strong>,
+<em>Honeywell, spol. s r.o.</em>,
+<code>2019 - 2019</code></p>
+<ul>
+<li>Firmware development for BLE enabled wireless MCU as a part of smart audio hearing protection device.</li>
+</ul>
+<p><strong>Electronics Engineer</strong>,
+<em>Atlas Dynamics SIA</em>,
+<code>2017 - 2019</code></p>
+<ul>
+<li>Testing and analyzing performance of unmanned aerial vehicles.</li>
+<li>Coordinating the development process of UAV subsystems.</li>
+<li>Communicating with suppliers and manufacturers.</li>
+<li>Electronics Speed Controller for BLDC motors of UAV.</li>
+<li>Electronically controlled load testing device for ESC.</li>
+<li>Integration of laser distance sensors.</li>
+<li>Base station: From concept to a working solution.</li>
+<li>Involvement in drone and base station battery system development.</li>
+<li>Involvement in Flight Controller development, both on hardware and software levels, as well as test equipment for it.</li>
+</ul>
+<p><strong>Electronics Engineer</strong>,
+<em>Escape Room SIA</em>,
+<code>2016 - 2017</code></p>
+<ul>
+<li>Fully designed and developed an interactive system of sensor-based games and mechanical contraptions.</li>
+<li>Implemented stepper motor control, audio signal processing with DSP, heart rate monitor sensors, motion sensor input on STM32F429 MCU.</li>
+<li>Full cycle of PCB development from schematics to produced boards.</li>
+<li>Implementation of a custom serial communication protocol based on RS485 hardware.</li>
+</ul>
+<p><strong>Electronics Engineer</strong>,
+<em>Silmor SIA</em>,
+<code>2015 - 2016</code></p>
+<ul>
+<li>Full-cycle design of membrane switch keyboards.</li>
+<li>Communication with clients, working out technical requirements.</li>
+<li>Production overseeing and consulting, preparing instructions for manufacturing.</li>
+<li>Communicating with suppliers, ordering materials and components.</li>
+<li>Developing new types of products and introducing new technologies.</li>
+</ul>
+<p><strong>Electronics Engineer Internship</strong>,
+<em>SV Tehs SIA</em>,
+<code>2010 - 2010</code></p>
+<ul>
+<li>PCB design of RF transceiver device, drawing IC pads, and preparing the project to meet standards for mass production.</li>
+<li>Production quality testing, RF IC components output signal testing.</li>
+</ul>
+<h2 id="education">Education</h2>
+<p><strong>University of Southern Denmark</strong>,
+<em>MSc in Robotics</em>,
+<code>2013 - 2014</code></p>
+<p>Subjects included:</p>
+<ul>
+<li>Embedded Systems, projects: “Inverted pendulum with PID control – final project”, “Colour recognizing sorting machine”, included design of schematics, PCB, mechanical parts and firmware</li>
+<li>Artificial intelligence, final project “Sokoban puzzle solving with a physical robot”. Project earned second place in university competition</li>
+<li>Mechanics, theory and design using Autodesk Inventor
+Also subjects: Robotics, Computer Vision, Multivariate statistics</li>
+<li>Computer Vision basics using OpenCV</li>
+</ul>
+<p><strong>Riga Technical University</strong>,
+<em>BSc in Electronics Engineering</em>,
+<code>2010 - 2013</code></p>
+<ul>
+<li>Dissertation project:  “Li-Ion battery capacity testing and charging device” included design and implementation of hardware prototype, firmware, testing battery units and analysing the results. Grade: 9 out of 10.</li>
+</ul>
+<p><strong>University of Pardubice</strong>,
+<em>Erasmus student exchange period</em>,
+<code>2012</code></p>
+<h2 id="personal-skills">Personal skills</h2>
+<ul>
+<li>Fluent in: English, Russian and Latvian, Beginner in Czech and German</li>
+<li>Enjoys 3D modelling and 3D printing as a hobby</li>
+<li>Driving license since 2009</li>
+</ul>
+<!-- ### Footer
+
+Last updated: May 2013 -->
+
+</body>
+</html>

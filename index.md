@@ -2,31 +2,38 @@
 layout: cv
 title: Aleksandrs Sevastjanovs's cv
 ---
-# Aleksandrs Sevastjanovs
-C++ developer, emedded systems designer, electronics engineer
+<div align="center">
+  <h1>ALEKSANDRS SEVASTJANOVS</h1>
+  <p>C++ developer, embedded systems designer, electronics engineer</p>
+</div>
 
-<div id="webaddress">
+<div id="webaddress", align="center">
 <a href="sevalks@gmail.com">sevalks@gmail.com</a>
 | <a href="https://www.linkedin.com/in/aleksandrs-sevastjanovs-1b5b6681/">Linkedin</a>
 | <a href="+37129395565">+37129395565</a>
-</div>
+</div> 
+
 
 ## Work Experience
 
-__Embedded Systems Developer__
-_Plockmatic SIA_ `2020 - now`
-- Optical mark detection library development
-- Firmware development for paper document finishing machines.
-- GUI application using Qt framework.
+__Embedded Systems Developer__,
+_Plockmatic SIA_,
+`2020 - now`
+- Optical mark detection cross platform library development.
+    - Building the optical mark recogntition algorithms from scratch using c++ and cmake.
+    - The library is made to be sensor agnostic.
+    - PC application that can be used for batch testing and debugging is also developed.
+- Firmware and software development for paper document finishing machines. From STM32F series MCU to linux boards such as beabgle bone and raspberry pi.
+- GUI application using Qt framework for embedded platforms.
 
-__Embedded Systems Developer__
-_Honeywell, spol. s r.o._
+__Embedded Systems Developer__,
+_Honeywell, spol. s r.o._,
 `2019 - 2019`
 
 - Firmware development for BLE enabled wireless MCU as a part of smart audio hearing protection device.
 
-__Electronics Engineer__
-_Atlas Dynamics SIA_
+__Electronics Engineer__,
+_Atlas Dynamics SIA_,
 `2017 - 2019`
 
 - Testing and analyzing performance of unmanned aerial vehicles.
@@ -39,8 +46,8 @@ _Atlas Dynamics SIA_
 - Involvement in drone and base station battery system development.
 - Involvement in Flight Controller development, both on hardware and software levels, as well as test equipment for it.
 
-__Electronics Engineer__
-_Escape Room, Riga, Latvia_
+__Electronics Engineer__,
+_Escape Room SIA_,
 `2016 - 2017`
 
 - Fully designed and developed an interactive system of sensor-based games and mechanical contraptions.
@@ -48,8 +55,8 @@ _Escape Room, Riga, Latvia_
 - Full cycle of PCB development from schematics to produced boards.
 - Implementation of a custom serial communication protocol based on RS485 hardware.
 
-__Electronics Engineer__
-_Silmor, Riga, Latvia_
+__Electronics Engineer__,
+_Silmor SIA_,
 `2015 - 2016`
 
 - Full-cycle design of membrane switch keyboards.
@@ -58,17 +65,17 @@ _Silmor, Riga, Latvia_
 - Communicating with suppliers, ordering materials and components.
 - Developing new types of products and introducing new technologies.
 
-__Electronics Engineer Internship__
-_SV Tehs, Riga, Latvia_
-*2010 - 2010*
+__Electronics Engineer Internship__,
+_SV Tehs SIA_,
+`2010 - 2010`
 
 - PCB design of RF transceiver device, drawing IC pads, and preparing the project to meet standards for mass production.
 - Production quality testing, RF IC components output signal testing.
 
 ## Education
 
-__University of Southern Denmark__
-_MSc in Robotics_
+__University of Southern Denmark__,
+_MSc in Robotics_,
 `2013 - 2014`
 
 Subjects included:
@@ -79,13 +86,13 @@ Also subjects: Robotics, Computer Vision, Multivariate statistics
 - Computer Vision basics using OpenCV
 
 
-__Riga Technical University__
-_BSc in Electronics Engineering_
+__Riga Technical University__,
+_BSc in Electronics Engineering_,
 `2010 - 2013`
 - Dissertation project:  “Li-Ion battery capacity testing and charging device” included design and implementation of hardware prototype, firmware, testing battery units and analysing the results. Grade: 9 out of 10.
 
-__University of Pardubice__
-_Erasmus student exchange period_
+__University of Pardubice__,
+_Erasmus student exchange period_,
 `2012`
 
 
