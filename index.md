@@ -21,8 +21,8 @@ _MikroTik SIA_,
 `2024`
 
 - Firmware development for IoT devices
-    - Writing applications within Zepyhr RTOS enviroment as well as porting and interating features from it to custom built bare metal projects
-    - Writing drivers for SPI devics such as eeprom memroy IC's
+    - Writing applications within Zepyhr RTOS environment as well as porting and integrating features from it to custom built bare metal projects
+    - Writing drivers for SPI devices such as EEPROM memory IC's
     - Implementing features in LoRaWAN enabled device
 
 __Embedded Systems Developer__,
